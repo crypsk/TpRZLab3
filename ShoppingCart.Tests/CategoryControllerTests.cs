@@ -42,7 +42,7 @@ namespace ShoppingCart.Tests
             unitOfWorkMock.Setup(u => u.Category).Returns(categoryRepoMock.Object);
 
             var controller = new CategoryController(unitOfWorkMock.Object);
-            controller.ModelState.Clear(); // Убедиться, что модель валидна
+            controller.ModelState.Clear();
 
             // Act
             controller.CreateUpdate(vm);
@@ -64,7 +64,7 @@ namespace ShoppingCart.Tests
             unitOfWorkMock.Setup(u => u.Category).Returns(categoryRepoMock.Object);
 
             var controller = new CategoryController(unitOfWorkMock.Object);
-            controller.ModelState.Clear(); // Убедиться, что модель валидна
+            controller.ModelState.Clear();
 
             // Act
             controller.CreateUpdate(vm);
